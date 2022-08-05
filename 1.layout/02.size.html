@@ -1,0 +1,41 @@
+<title>size</title>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+<style>
+    div#wrap {
+        width: 10rem;
+        height: 10rem;
+        background: lightyellow;
+        border: .01rem dotted;
+    }
+
+    div#wrap div {
+        background: lightgreen;
+        border: .01rem solid;
+    }
+</style>
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+        <div class='col'>
+            <div id='wrap'>
+                <div>basic</div>
+                <div class='w-auto h-auto'>auto</div> <!-- width, height auto  브라우저가 결정-->
+                <div class='mw-100 mh-100'>max</div> <!-- width, height max -->
+            </div>
+        </div>
+        <div class='col'>
+            <div id='wrap'>
+                <div class='w-25 h-25'>25%</div> <!-- width, height 25% 만 사용 -->
+            </div>
+        </div>
+        <div class='col'>
+            <div id='wrap'>
+                <div class='w-50 h-50'>50%</div> <!-- width, height 50% 만 사용 -->
+            </div>
+    </div>
+</div>
+</body>
